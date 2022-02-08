@@ -2,6 +2,7 @@ import { css } from '@emotion/react'
 import { NavLink } from './NavLink'
 
 export const Header = () => {
+  return <></>;
   return (
     <>
       <header css={css`
