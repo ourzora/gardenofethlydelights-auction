@@ -16,7 +16,9 @@ class CreateAuctionHouseDocument extends Document {
   *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @@@@@@**            @@@@@
         */`}</script>
         <Html>
-          <Head>{/* Place any custom scripts here */}</Head>
+          <Head>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</Head>
           <body>
             <Main />
             <NextScript />

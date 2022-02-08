@@ -8,16 +8,16 @@ export default function GlobalStyles() {
       styles={css`
         :root {
           /* COLORS */
-          --black: #000;
-          --white: #fff;
-          --bg-color: #f6f8fa;
+          --black: #fff;
+          --white: #000;
+          --bg-color: #2419df;
           --overlay: rgba(0, 0, 0, 0.85);
           --overlay-light: rgba(0, 0, 0, 0.35);
           --border-black: 1px solid var(--black);
           --border-light: 1px solid #dbdbdb;
 
           /* FONTS */
-          --font-a: Helvetica, Arial, sans-serif;
+          --font-a: 'Press Start 2P', sans-serif;
           --font-b: Courier, monospace;
           
           /* SPACING */
@@ -61,6 +61,8 @@ export default function GlobalStyles() {
         /* LAYOUT */
         body * {
           font-family: var(--font-a)!important;
+          color: var(--black);
+          background: var(--bg-color);
         }
 
         main {
