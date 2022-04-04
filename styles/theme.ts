@@ -3,13 +3,11 @@ import * as mixins from './mixins'
 
 export const mediaConfigurationStyles = {
   theme: {
-    /*
     lineSpacing: 20,
     linkColor: 'var(--black)',
     borderStyle: '1px solid var(--black)',
     defaultBorderRadius: 0,
     maximumPricingDecimals: 2,
-    */
   },
   styles: {
     /*

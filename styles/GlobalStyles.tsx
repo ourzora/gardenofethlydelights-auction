@@ -6,18 +6,24 @@ export default function GlobalStyles() {
   return (
     <Global
       styles={css`
+
+        @font-face {
+          font-family: 'DecimaMonoCyr';
+          src: url('/fonts/DecimaMonoCyr.ttf');
+        }
+
         :root {
           /* COLORS */
           --black: #fff;
           --white: #000;
-          --bg-color: #2419df;
+          --bg-color: #000;
           --overlay: rgba(0, 0, 0, 0.85);
           --overlay-light: rgba(0, 0, 0, 0.35);
           --border-black: 1px solid var(--black);
           --border-light: 1px solid #dbdbdb;
 
           /* FONTS */
-          --font-a: 'Press Start 2P', sans-serif;
+          --font-a: 'DecimaMonoCyr';
           --font-b: Courier, monospace;
           
           /* SPACING */
@@ -42,6 +48,10 @@ export default function GlobalStyles() {
           --content-width-xl: ${returnBreakpoint('xl')};
         }
 
+        .zora-cardOuter {
+          background: inherit;
+        }
+
         /* MEDIA QUERY MIXIN */
         ${media.laptop`
           :root {
@@ -59,10 +69,12 @@ export default function GlobalStyles() {
 
         /* DEFAULTS */
         /* LAYOUT */
-        body * {
-          font-family: var(--font-a)!important;
+        body {
           color: var(--black);
           background: var(--bg-color);
+        }
+        body * {
+          font-family: var(--font-a)!important;
         }
 
         main {
@@ -90,6 +102,20 @@ export default function GlobalStyles() {
               text-decoration: underline;
             `}
           }
+        }
+
+        .zora-zorb {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+
+          margin-left: -29px;
+          margin-top: -3px;
+          position: absolute;
+        }
+
+        .docs-link {
+          position: relative;
         }
 
         /* TYPOGRPAHY */
@@ -128,6 +154,26 @@ export default function GlobalStyles() {
         /* ZORA SPECIFIC -- CLEAN UP
            - WALLET MODAL
         */
+       .zora-fullLabel, .zora-propertiesLabel  {
+        color: #e32f9d;
+        opacity: 1;
+       }
+       .zora-addressLink, .zora-addressLink *, .zora-propertiesItem, .zora-fullProofLink * {
+         color: #00a09f;
+       }
+       .zora-fullProofLink:hover {
+         background-color: #111;
+       }
+       .zora-fullTitle {
+         font-size: 47pt;
+         letter-spacing: 0.6em;
+         text-align:center;
+       }
+       .zora-fullDescription {
+         letter-spacing: 2px;
+         font-size: 14pt;
+         line-height: 120%;
+       }
         .zora-wallet-modalContent {
           h3 {
             font-size: var(--text-03)!important;
