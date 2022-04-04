@@ -84,6 +84,10 @@ export default function GlobalStyles() {
           min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
         }
 
+        footer {
+          opacity: 0.6;
+        }
+
         header,
         footer {
           font-size: var(--text-02);
