@@ -43,4 +43,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const IndexWrapper = styled(PageWrapper)`
   max-width: var(--content-width-xl);
+  min-height: 92vh;
+  position: relative;
 `;

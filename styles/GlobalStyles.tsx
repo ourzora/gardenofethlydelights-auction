@@ -169,7 +169,7 @@ export default function GlobalStyles() {
          background-color: #111;
        }
        .zora-fullTitle {
-         font-size: 47pt;
+         font-size: 8vw;
          letter-spacing: 0.6em;
          text-align:center;
        }
@@ -177,6 +177,10 @@ export default function GlobalStyles() {
          letter-spacing: 2px;
          font-size: 14pt;
          line-height: 120%;
+         text-align: justify;
+       }
+       .zora-fullPageDataGrid {
+         display: block;
        }
         .zora-wallet-modalContent {
           h3 {
