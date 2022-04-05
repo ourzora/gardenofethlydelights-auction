@@ -169,7 +169,7 @@ export default function GlobalStyles() {
          background-color: #111;
        }
        .zora-fullTitle {
-         font-size: 8vw;
+         font-size: 44px;
          letter-spacing: 0.6em;
          text-align:center;
        }
